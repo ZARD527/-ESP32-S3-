@@ -1,0 +1,35 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "core/app_state.c"
+        "assets/fonts/app_cjk_font.c"
+        "ui/ui_style.c"
+        "ui/ui.c"
+        "ui/page_home.c"
+        "ui/page_notes.c"
+        "ui/page_calendar.c"
+        "ui/page_weather_env.c"
+        "ui/page_widgets.c"
+        "services/weather_service.c"
+        "services/sensor_service.c"
+        "services/sync_service.c"
+        "services/holiday_service.c"
+        "services/imu_service.c"
+        "ports/display_port.c"
+        "ports/input_port.c"
+        "ports/imu_port.c"
+    INCLUDE_DIRS
+        "."
+        "assets/fonts"
+        "core"
+        "ui"
+        "services"
+        "ports"
+    REQUIRES
+        esp_timer
+        esp_hw_support
+        esp_system
+        heap
+        driver
+        lvgl
+)

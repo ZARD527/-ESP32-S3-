@@ -1,0 +1,22 @@
+# Build outputs
+build/
+simulator/build/
+simulator/bin/
+
+# ESP-IDF generated files
+sdkconfig
+sdkconfig.old
+managed_components/
+dependencies.lock
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Editor and OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
